@@ -75,8 +75,8 @@ footer ul {
 
 /* ----- Primary Nav Component ----- */
 .NavPrimary {
+    margin-top: 30px;
     position: absolute;
-    bottom: -50px;
     left: 10px;
 }
 
@@ -85,8 +85,7 @@ footer ul {
         bottom: 20px;
         display: flex;
         left: initial;
-        margin-left: auto;
-        margin-right: 75px;
+        margin: 0 75px 0 auto;
         right: 30px;
         transform: rotate(-1deg);
         z-index: 200;
@@ -96,6 +95,7 @@ footer ul {
 .NavPrimary-list {
     align-items: center;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .NavPrimary-link {
