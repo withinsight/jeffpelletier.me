@@ -22,6 +22,8 @@ body {
 
 h1,
 h2,
+h3,
+h4,
 p {
     margin: 0 0 10px;
 }
@@ -43,6 +45,10 @@ footer ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+ul {
+    margin-top: 0;
 }
 
 /* ----- Header Component ----- */
@@ -78,6 +84,7 @@ footer ul {
 }
 
 /* ----- Primary Nav Component ----- */
+
 .NavPrimary {
     margin-top: 30px;
     position: absolute;
@@ -188,6 +195,70 @@ footer ul {
 .Content-h2 {
     color: var(--text-secondary);
     font-size: 3em;
+}
+
+/* ----- Divider Component ----- */
+
+.Divider {
+    background-color: var(--absolute);
+    border-top: 2px solid var(--primary);
+    border-right: 0;
+    border-bottom: 1px solid var(--primary);
+    border-left: 0;
+    height: 1px;
+    margin: 20px 0 40px;
+}
+
+/* ----- Card Component ----- */
+
+@media screen and (min-width: 650px) {
+    .Card-content {
+        display: flex;
+    }
+}
+
+.Card-image {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 650px) {
+    .Card-image {
+        height: 250px;
+        margin-right: 20px;
+        width: 400px;
+    }
+
+    .Card-image--right {
+        order: 2;
+    }
+}
+
+/* ----- BlogPostHighlight Component ----- */
+.BlogPostHighlight-title {
+    margin-bottom: 0;
+}
+
+.BlogPostHighlight-pubDate {
+    color: var(--text-secondary);
+    display: inline-block;
+    font-size: 0.8em;
+    margin-bottom: 10px;
+}
+
+.BlogPostHighlight-listTitle {
+    margin-bottom: 0;
+}
+
+.BlogPostHighlight-list {
+    margin-bottom: 30px;
+}
+
+/* ----- BlogPostList Component ----- */
+
+.BlogPostList-pubDate {
+    color: var(--text-secondary);
+    font-size: 0.8em;
 }
 
 /* ----- Footer Component ----- */
