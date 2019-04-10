@@ -1,9 +1,9 @@
-document.addEventListener('readystatechange', e => {
+document.addEventListener('readystatechange', function(e) {
     if (e.target.readyState === 'interactive') {
-        let externalLinks = document.querySelectorAll('[data-hook="link-external"]');
+        var externalLinks = document.querySelectorAll('[data-hook="link-external"]');
 
-        externalLinks.forEach( (link) => {
-            link.addEventListener('click', e => {
+        externalLinks.forEach(function(link) {
+            link.addEventListener('click', function(e) {
                 e.preventDefault();
                 window.open(e.target.href);
             });
