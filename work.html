@@ -56,7 +56,98 @@
 
         <section class="Content">
             <h2 class="Content-h2">Work</h2>
-            <p>A sampling of work (that's publicly accessible) I've contributed to in recent years.</p>
+            <p>A sampling of work I've contributed to in recent years.</p>
+
+            <hr class="Divider" />
+
+            <div class="Card">
+              <h3 class="Card-title">BILL Design Systems. Project: Design Tokens</h3>
+              <div class="Card-content">
+                <img src="assets/img/tokens-macbook.png" alt="BILL Design tokens" class="Card-image Card-image--right" />
+                <div class="Card-summary">
+                  <p>I owned design tokens end-to-end at BILL, from initial taxonomy and naming to automation via &quot;token services&quot;, implementation in design systems components as CSS custom properties and documenting in the design systems docs site.</p>
+                  <p>The naming disussions resulted in a taxonomy that was published to the docs site, and made naming tokens in the future much more fluid.</p>
+                  <p>I worked with the <a data-hook="link-external" href="https://tokens.studio/" rel="external">Tokens Studio plugin</a> to wire up tokens in Figma with a design token translation tool (<a data-hook="link-external" href="https://amzn.github.io/style-dictionary/#/" rel="external">Style Dictionary</a>) in code.</p>
+                  <p>The results included the first time design token changes were visible (via source control), the ability for designers to work on tokens and have their work reflected in code, and a section of our docs site that was usable by design and engineering audiences alike.</p>
+                  <p>Oh, and <a data-hook="link-external" href="https://twitter.com/DesignTokens/status/1417569675681034240" rel="external">my arm was re-Tweeted by the w3c Design Tokens Community Group</a>.</p>
+                </div>
+              </div>
+            </div>
+
+            <hr class="Divider" />
+
+            <div class="Card">
+              <h3 class="Card-title">BILL Design Systems. Project: Theming</h3>
+              <div class="Card-content">
+                <img src="assets/img/theming-macbook.png" alt="BILL Theming" class="Card-image Card-image--left" style="margin-block-start: 10px" />
+                <div class="Card-summary">
+                  <p>The BILL design system required theming from multiple perspectives: both for 13 bank partners as well as multiple acquired products.</p>
+                  <p>I solved this challenge with an additional layer of design tokens: component tokens. This allowed the team to tweak specific design elements (like border-radius on buttons) per bank partner or product (without unintentionally impacting other components using similar semantic layer tokens).</p>
+                  <p>Bank partners primarily reserved theming requests to color and font, while for the product efforts, tokens like space, border-radius and more complex changes like layout and positioning were required.</p>
+                  <p>The result was a single <a data-hook="link-external" href="http://lit.dev/" rel="external">Lit</a> component codebase being able to support multiple bank channels and BILL products, all via a single toggle in Storybook or product. During one redesign, engineering remarked that &quot;Jeff’s theming work enabled 50% of the color and typography updates via the flip of a switch, allowing engineering to focus on the remaining updates&quot;.</p>
+                  <p>Further research on <a data-hook="link-external" href="https://bradfrost.com/blog/post/the-many-faces-of-themeable-design-systems/" rel="external">component tokens</a>.</p>
+                </div>
+              </div>
+            </div>
+
+            <hr class="Divider" />
+
+            <div class="Card" id="FeatureWorkflow">
+              <h3 class="Card-title">BILL Design Systems. Project: Feature Workflow</h3>
+              <div class="Card-content">
+                <img src="assets/img/featureworkflow-macbook.png" alt="BILL Feature Workflow" class="Card-image Card-image--right" />
+                <div class="Card-summary">
+                  <p>I ran a multi-session workshop with the BILL design system team to inclusively determine what the team collectively defined as the steps and sub-steps to be completed for any design system feature work.</p>
+                  <p>I drafted a workshop blueprint, ran the workshop in FigJam, documented the decisions in the docs site, and reflected the decisions as cloneable epics and tickets in Jira.</p>
+                  <p>The result was a consistent definition of done across design and engineering, with visuals that paired with color-coded Jira tickets, which the team responded to with extremely positive feedback at retros.</p>
+                  <p>Further research on <a data-hook="link-external" href="https://medium.com/eightshapes-llc/system-features-step-by-step-e69c90982630" rel="external">design systems feature workflow process</a>.</p>
+                </div>
+              </div>
+            </div>
+
+            <hr class="Divider" />
+
+            <div class="Card" id="ComponentSpecs">
+              <h3 class="Card-title">BILL Design Systems. Project: Component Specs</h3>
+              <div class="Card-content">
+                <img src="assets/img/componentspec-macbook.png" alt="BILL Component Specs" class="Card-image Card-image--left" style="margin-block-start: 10px" />
+                <div class="Card-summary">
+                  <p>I developed a Google Doc template that was leveraged to implement over 50 component specs, detailing component API (props, slots, etc.) and other component handoff details like behavior, animation, accessibility and responsive requirements.</p>
+                  <p>These docs served as a communal location for design and engineering to work together while designing and building components, as well as a record of what the requirements were at any given point in history.</p>
+                  <p>The result was overwhelmingly positive from the team: increased collaboration across design and engineering, and more robust and refined API details and component quality in general.</p>
+                  <p>Further research on <a data-hook="link-external" href="https://medium.com/eightshapes-llc/crafting-ui-component-api-together-81946d140371" rel="external">component specs for design systems</a>.</p>
+                </div>
+              </div>
+            </div>
+
+            <hr class="Divider" />
+
+            <div class="Card" id="Metrics">
+              <h3 class="Card-title">BILL Design Systems. Project: Metrics</h3>
+              <div class="Card-content">
+                <img src="assets/img/metrics-macbook.png" alt="BILL Metrics" class="Card-image Card-image--right" />
+                <div class="Card-summary">
+                  <p>As part of a week long hackathon, I built a tool using Node.JS that searched product codebases at BILL for instances of components. Additionally, I built the frontend UI for a website to make the data generated by the componeent finder tool visible to the company.</p>
+                  <p>I ran the tool monthly, and published a report in Slack driving people to the frontend UI. The result was being able to visibly see over time when the components from the design system actually eclipsed the quantity of legacy components in product.</p>
+                  <p>I also looked at assigning monetary value to the design system team's work, in the form of interviewing product designers and engineers, and translating that into a number based on the quantity of components currently adopted by product.</p>
+                  <p>These reports fed up to leadership as well as made use of by PM's looking to understand where to prioritize.</p>
+                </div>
+              </div>
+            </div>
+
+            <hr class="Divider" />
+
+            <div class="Card" id="Advocacy">
+              <h3 class="Card-title">BILL Design Systems. Project: Advocacy</h3>
+              <div class="Card-content">
+                <img src="assets/img/joshbraddan.png" alt="BILL Design Systems Advocacy" class="Card-image Card-image--left" />
+                <div class="Card-summary">
+                  <p>I hosted a series of 6 watch parties where everyone in the company was invited to watch a single video on design systems, and then participate in dicsussion for the remainder of the hour.</p>
+                  <p>The video series chosen was the excellent <a data-hook="link-external" href="https://www.youtube.com/watch?v=Z-3ygFVPBFM&list=PLeWHfyz6lrQW2xdG_Hj-GhFIbMuOdy4TK&index=6" rel="external">design system series produced by InVision featuring Brad Frost, Dan Mall and Josh Clark</a>.</p>
+                  <p>The goal with this series was to uplevel the design systems knowledge across the company in a casual forum where everyone felt comfortable asking questions and participating in the discussion.</p>
+                </div>
+              </div>
+            </div>
 
             <hr class="Divider" />
 
