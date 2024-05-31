@@ -244,6 +244,23 @@ ul {
     }
 }
 
+.Image--fullWidth {
+    display: block;
+    max-width: 100%;
+}
+
+.Image--centered {
+    display: block;
+    margin: 0 auto 10px;
+    max-width: 100%;
+}
+
+@media screen and (min-width: 650px) {
+    .Image--centered {
+        width: 600px;
+    }
+}
+
 /* ----- BlogPostHighlight Component ----- */
 .BlogPostHighlight-title {
     margin-bottom: 0;
